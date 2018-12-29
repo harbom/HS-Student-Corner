@@ -1,8 +1,93 @@
 ﻿<!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <html>
-<body>
-<h1 id = "title">Rouse High School Student Corner</h1>
+<body id = "background">
+<h1 id = "title">High School Homework Help</h1>
 
+<!--navigation bar buttons-->
+<div class = "tab">
+    <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'math')">Math</button>
+    <button class="tablinks" onclick="openCity(event, 'sci')">Science</button>
+    <button class="tablinks" onclick="openCity(event, 'compsci')">Computer Science</button>
+    <button class="tablinks" onclick="openCity(event, 'hist')">History</button>
+    <button class="tablinks" onclick="openCity(event, 'eng')">English</button>
+    <button class="tablinks" onclick="openCity(event, 'college')">College Planning</button>
+</div>
+<!--navigation bar content-->
+<div id="home" class="tabcontent">
+    <h1>Home</h1>
+    <br>
+    <h2>This site compiles academic information about common courses taken throughout the American high school educational system
+        and how to prepare for them. They will focus mostly on Advanced Placement (AP) courses sponsored by
+        CollegeBoard.
+    </h2>
+    <h2>Click on the tabs above to view resources for high school mathematics, science, computer science, history,
+        and a few helpful resources on the stressfull college application process.
+    </h2>
+    <br>
+    <h2>Enjoy!</h2>
+</div>
+
+  <div id="math" class="tabcontent">
+    <h1>Math</h1>
+    <p>Math can be difficult for many high schoolers because of its complexity and the practice that is needed to develop mastery
+        of the subject. Here are few resources to help with most of the math courses taught throughout the US.</h2>
+    <h2>Pre-Algebra - Pre-Calculus</h2>
+    <h2>Calculus AB/BC</h2>
+    <h2>Further Studies</h2>
+  </div>
+  
+  <div id="sci" class="tabcontent">
+    <h1>Science</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+
+  <div id="compsci" class="tabcontent">
+    <h1>Computer Science</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+
+  <div id="hist" class="tabcontent">
+    <h1>History</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+
+  <div id="eng" class="tabcontent">
+    <h1>English</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+
+  <div id="college" class="tabcontent">
+    <h1>College Planning</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+
+  <!--code to open each page-->
+  <script>
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 </body>
 </html>
