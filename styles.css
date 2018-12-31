@@ -36,7 +36,7 @@ its scroll position */
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98.5%;
   }
 
   .sticky + .tabcontent{
@@ -55,14 +55,16 @@ its scroll position */
 }
 
 .tabcontent {
-    border-style: 
+    border-color: rgb(11, 116, 202);
+    border-width: 10px;
+    border-style: solid;
     color: black;
     display: none;
     padding: 10px 20px;
     height: 100%;
     margin: 0 auto;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+    -webkit-animation: fadeEffect 1.2s;
+    animation: fadeEffect 1.2s;
 }
 
 /* Fade in tabcontent */
