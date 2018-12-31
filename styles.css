@@ -6,7 +6,7 @@
 #title {
     color: black;
     text-align: center;
-    border: rgb(11, 116, 202);
+    border-width: 5px;
     margin-top: 2%;
 }
 
@@ -55,6 +55,7 @@ its scroll position */
 }
 
 .tabcontent {
+    border-style: 
     color: black;
     display: none;
     padding: 10px 20px;
