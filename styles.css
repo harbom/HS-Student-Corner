@@ -29,6 +29,19 @@
     
 }
 
+/* the sticky class is added to the tab with js code when it reaches
+its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .sticky + .tabcontent{
+      padding-top:
+  }
+
 .tab button:hover{
     background-color: black;
     color: rgb(11, 116, 202);

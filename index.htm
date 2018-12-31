@@ -5,14 +5,16 @@
 <h1 id = "title">High School Homework Help</h1>
 
 <!--navigation bar buttons-->
-<div class = "tab">
-    <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
-    <button class="tablinks" onclick="openCity(event, 'math')">Math</button>
-    <button class="tablinks" onclick="openCity(event, 'sci')">Science</button>
-    <button class="tablinks" onclick="openCity(event, 'compsci')">Computer Science</button>
-    <button class="tablinks" onclick="openCity(event, 'hist')">History</button>
-    <button class="tablinks" onclick="openCity(event, 'eng')">English</button>
-    <button class="tablinks" onclick="openCity(event, 'college')">College Planning</button>
+<div id = "navbar" class = "tab ">
+    <div class = "fixed">
+            <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'math')">Math</button>
+            <button class="tablinks" onclick="openCity(event, 'sci')">Science</button>
+            <button class="tablinks" onclick="openCity(event, 'compsci')">Computer Science</button>
+            <button class="tablinks" onclick="openCity(event, 'hist')">History</button>
+            <button class="tablinks" onclick="openCity(event, 'eng')">English</button>
+            <button class="tablinks" onclick="openCity(event, 'college')">College Planning</button>
+    </div>
 </div>
 <!--navigation bar content-->
 <div id="home" class="tabcontent">
@@ -187,6 +189,21 @@
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    
+    //code to enable a sticky tab
+    window.onscroll = function() {stick()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stick()
+    {
+        if (window.pageYOffset >= sticky)
+            navbar.classList.add("sticky")
+        else
+            navbar.classList.remove("sticky");
+    }
+    
 </script>
 </body>
 </html>
