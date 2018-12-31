@@ -40,7 +40,7 @@ its scroll position */
   }
 
   .sticky + .tabcontent{
-      padding-top:
+      padding-top: 60px;
   }
 
 .tab button:hover{
