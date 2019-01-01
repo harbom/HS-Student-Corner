@@ -10,6 +10,7 @@
 <div id = "navbar" class = "tab ">
     <div class = "fixed">
             <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'gpacalc')">GPA Calculator</button>
             <button class="tablinks" onclick="openCity(event, 'math')">Math</button>
             <button class="tablinks" onclick="openCity(event, 'sci')">Science</button>
             <button class="tablinks" onclick="openCity(event, 'hist')">History</button>
@@ -364,6 +365,97 @@
             </ul>
     </ul>
   </div>
+
+  <div id="gpacalc" class="tabcontent">
+    <h1 style = "text-align: center">GPA Calculator</h1>
+    <p>This is a custom GPA calculator based off of the Leander ISD GPA system. Please input your grades (rounded to the nearest
+        integer) for each course in each of the six weeks.
+        Indicate if that course is unweighted or not. Each column represents a 6 weeks.
+        Input the GPA in Naviance and how many semesters you have been in high school for. The final
+        result will be your semester GPA and your cumulative GPA.</p>
+        <table id = "calc">
+            <tr>
+              <th>Course</th>
+              <th>First six weeks</th>
+              <th>Second six weeks</th> 
+              <th>Third six weeks</th>
+              <th>Final Exam Grade</th>
+              <th>Weighted?</th>
+              <th>Counts towards GPA?</th>
+            </tr>
+            <tr>
+              <td>1st Period</td>
+              <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+              <td><input type = "number" class = "sixWeeksGrade"></input></td>
+              <td><input type = "number" class = "sixWeeksGrade"></input></td>
+              <td><input type = "number" class = "final"></input></td>
+              <td><input type = "checkbox" class = "weight"></input></td>
+              <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+            <tr>
+                <td>2nd Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+            <tr>
+                <td>3rd Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+            <tr>
+                <td>4th Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+            <tr>
+                <td>5th Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+            <tr>
+                <td>6th Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+            <tr>
+                <td>7th Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+                <td>8th Period</td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td> 
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "sixWeeksGrade"></input></td>
+                <td><input type = "number" class = "final"></input></td>
+                <td><input type = "checkbox" class = "weight"></input></td>
+                <td><input type = "checkbox" class = "counts"></input></td>
+            </tr>
+          </table>
+</div>
 
   <script>
     //code to open each page
