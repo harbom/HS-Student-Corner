@@ -55,6 +55,13 @@ its scroll position */
     color: rgb(11, 116, 202);
 }
 
+a {color: blue}
+
+a:visited {text-decoration: none; color: purple}
+a:hover {text-decoration: none; color: blue}
+a:focus {text-decoration: none; color: yellow}
+a:hover, a:active {text-decoration: none; color: black}
+
 .tabcontent {
     border-color: rgb(11, 116, 202);
     border-width: 10px;
