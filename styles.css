@@ -6,6 +6,7 @@
 #title {
     color: black;
     text-align: center;
+    font-family: 'Hammersmith One';
     border-width: 5px;
     margin-top: 2%;
 }
@@ -24,7 +25,8 @@
     outline: none;
     cursor: pointer;
     padding: 14px 0px;
-    font-size: 17px;
+    font-size: 19px;
+    font-family: 'Hammersmith One';
     width: 16.65%;
     max-width: 16.65%;
     text-align: center;
@@ -63,6 +65,8 @@ a:focus {text-decoration: none; color: yellow}
 a:hover, a:active {text-decoration: none; color: black}
 
 .tabcontent {
+    font-size: 15px;
+    font-family: 'Hammersmith One';
     border-color: rgb(11, 116, 202);
     border-width: 10px;
     border-style: solid;
